@@ -58,7 +58,7 @@ ssh-keygen -t rsa -C "你的邮箱" ---生成ssh key
 
  运行 git remote add origin 你复制的地址 
 
- 解决办法: 执行 git pull origin master
+ 解决办法: 执行 git pull origin master //没有这个分支 先pull一下
 
  输入 git push -u origin master 
 
