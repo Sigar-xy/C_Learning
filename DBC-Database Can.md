@@ -4,9 +4,9 @@
 
 DBC文件描述了单一CAN网络的通信，这个信息足以去监控和分析这个网络并且模拟物理上不可用的节点（剩余总线模拟）
 
-这个DBC文件也被习惯用于开发作为CAN网络一部分电子控制单元的通信软件，ECU的功能行为不是又DBC文件处理的。
+这个DBC文件也被习惯用于开发作为CAN网络一部分电子控制单元的通信软件，ECU的功能行为不是由DBC文件处理的。
 
-### 2 General Definitions 
+### 2 General Definitions   
 
 ##### 在这个文档中使用了以下通用元素(定义)
 
@@ -20,7 +20,7 @@ DBC文件描述了单一CAN网络的通信，这个信息足以去监控和分�
 
 ​	`C_identifier: a valid C_identifier. C_identifiers have to start with am alpha character or an underscore and may further consist of alpha-numeric         characters         and         underscores. C_identifier = (alpha_char | '_') {alpha_num_char | '_'}`
 
-一个有效的C_标识符 。 C标识符必须以am字母符号开始或者下划线，还可以由字母数字 符号 和 下划线组成
+一个有效的C_标识符 。 C标识符必须以字母符号开始或者下划线，还可以由字母数字 符号 和 下划线组成
 
 C标识符 = （字母符号 | '\_\_’）{ 字母数字符号 | '\__'} 
 
@@ -40,7 +40,7 @@ C标识符 = （字母符号 | '\_\_’）{ 字母数字符号 | '\__'}
 | ；        | The semicolon terminates a definition 分号终止定义           |
 | \|        | The vertical bar indicates an alternative 竖线表示另一种选择 |
 | [ ... ]   | The definitions within brackets are optional (zero or one occurrence).括号内定义是可选的 |
-| { ... }   | The definitions within braces repeated (zero or multiple occurrences)大括号内重写 |
+| { ... }   | The definitions within braces repeated (zero or multiple occurrences)大括号内定义重复 |
 | ( ... )   | Parentheses define grouped elements圆括号定义分组元素        |
 | ' ... '   | Text in hyphens has to appear as defined.连字符中的文本必须按定义显示 |
 | (* ... *) | Comment 注释                                                 |
@@ -120,9 +120,9 @@ signal_extended_value_type_list
 
 ### 5 Bit Timing Definitions
 
-##### 位定时 部分定义了波特率和网络BTR寄存器的设置，已经过时没有用了，但关键字“BS_”必须出现在DBC文件中。
+##### 位定时 部分定义了波特率和网络BTR寄存器的设置，已经过时没有用了，但关键字“BS”必须出现在DBC文件中。*<u>只出现但是不用</u>*
 
-`bit_timing = 'BS_:' [baudrate ':' BTR1 ',' BTR2 ] ;`
+`_bit_timing = 'BS_:' [baudrate ':' BTR1 ',' BTR2 ] ;`
 
 `baudrate = unsigned_integer ; `
 

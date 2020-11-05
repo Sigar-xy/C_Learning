@@ -52,23 +52,23 @@
 
 发送接收都禁止
 
-![image-20201104094455063](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104094455063.png)
+![image-20201104094455063](./images\image-20201104094455063.png)
 
 #### 错误计数规则
 
-![image-20201104094654373](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104094654373.png)
+![image-20201104094654373](./images\image-20201104094654373.png)
 
 ### 1.3 CAN协议的基本概念
 
-![image-20201104094813974](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104094813974.png)
+![image-20201104094813974](./images\image-20201104094813974.png)
 
-![image-20201104094914637](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104094914637.png)
+![image-20201104094914637](./images\image-20201104094914637.png)
 
 数据链路层分为 MAC 子层和 LLC 子层，MAC 子层是 CAN 协议的核心部分。数据链路层的功能是将物理层收到的信号组织成有意义的消息，并提供传送错误控制等传输控制的流程。具体地说，就是消息的帧化、仲裁、应答、错误的检测或报告。数据链路层的功能通常在 CAN 控制器的硬件中执行。
 
 ### 1.4 CAN协议及标准规格
 
-![image-20201104095058628](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104095058628.png)
+![image-20201104095058628](./images\image-20201104095058628.png)
 
 11898-1对应controller
 
@@ -78,17 +78,17 @@
 
 11898-4增加了时间触发通讯机制
 
-![image-20201104095253748](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104095253748.png)
+![image-20201104095253748](./images\image-20201104095253748.png)
 
-![image-20201104095318276](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104095318276.png)
+![image-20201104095318276](./images\image-20201104095318276.png)
 
 #### 发送器和接受器（低速和高速）
 
-![image-20201104095348688](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104095348688.png)
+![image-20201104095348688](./images\image-20201104095348688.png)
 
 0~125kbps 不需要终端电阻
 
-![image-20201104095353163](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104095353163.png)
+![image-20201104095353163](./images\image-20201104095353163.png)
 
 0~1Mbps 需要终端电阻
 
@@ -96,15 +96,15 @@
 
 #### 帧的种类
 
-![image-20201104095831273](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104095831273.png)
+![image-20201104095831273](./images\image-20201104095831273.png)
 
 **① 数据帧**
 
-![image-20201104100021713](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104100021713.png)
+![image-20201104100021713](./images\image-20201104100021713.png)
 
-![image-20201104100747603](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104100747603.png)
+![image-20201104100747603](./images\image-20201104100747603.png)
 
-![image-20201104100524015](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104100524015.png)
+![image-20201104100524015](./images\image-20201104100524015.png)
 
 其中ID标准有11位，从ID28到ID18依次发送 （禁止：ID = 1111111XXXX）
 
@@ -116,36 +116,36 @@ DLC （4位）只表示 0 ~ 8
 
 **② 遥控帧（远程帧）**
 
-![image-20201104100044720](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104100044720.png)
+![image-20201104100044720](./images\image-20201104100044720.png)
 
 **③ 错误帧**
 
-![image-20201104100140697](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104100140697.png)
+![image-20201104100140697](./images\image-20201104100140697.png)
 
 ——主动错误标志：6 个位的显性位。
 ——被动错误标志：6 个位的隐性位。
 
 **④ 过载帧**
 
-![image-20201104100156971](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104100156971.png)
+![image-20201104100156971](./images\image-20201104100156971.png)
 
 **⑤ 帧间隔**
 
-![image-20201104100206627](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104100206627.png)
+![image-20201104100206627](./images\image-20201104100206627.png)
 
 ### 1.6 总线竞争
 
-<img src="C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104102239266.png" alt="image-20201104102239266" style="zoom:80%;" />
+<img src="./images\image-20201104102239266.png" alt="image-20201104102239266" style="zoom:80%;" />
 
 通过判断总线电平显性&发送电平隐性说明竞争失败，转到接受状态
 
 #### 位填充
 
-![image-20201104102618452](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104102618452.png)
+![image-20201104102618452](./images\image-20201104102618452.png)
 
 ### 1.7 错误的种类
 
-![image-20201104102815324](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104102815324.png)
+![image-20201104102815324](./images\image-20201104102815324.png)
 
 (1) 位错误
 ——位错误由向总线上输出数据帧、遥控帧、错误帧、过载帧的单元和输出 ACK 的单元、输出错误的单元来检测。
@@ -157,27 +157,27 @@ DLC （4位）只表示 0 ~ 8
 ——即使接收单元检测出 EOF（7 个位的隐性位）的最后一位（第 8 个位）为显性电平，也不视为格式错误。
 —— 即使接收单元检测出数据长度码（DLC）中 9∼15 的值时，也不视为格式错误。
 
-![image-20201104103012522](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104103012522.png)
+![image-20201104103012522](./images\image-20201104103012522.png)
 
 ### 1.8 错误帧输出
 
-![image-20201104103155465](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104103155465.png)
+![image-20201104103155465](./images\image-20201104103155465.png)
 
 ### 1.9 位时序
 
 发送单元每秒钟发送的位数为位速率，一位分为4段，每段又可分为若干个Tq（Time Quantum），位时序
 
-<img src="C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104103750317.png" alt="image-20201104103750317"  />
+<img src="./images\image-20201104103750317.png" alt="image-20201104103750317"  />
 
 ### 1.10 硬件同步
 
-![image-20201104104326306](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104104326306.png)
+![image-20201104104326306](./images\image-20201104104326306.png)
 
 ### 1.11 再同步
 
 SJW 重新同步跳跃宽度
 
-![image-20201104104844052](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104104844052.png)
+![image-20201104104844052](./images\image-20201104104844052.png)
 
 ### 1.12 调整同步的规则
 
