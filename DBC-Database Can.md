@@ -30,7 +30,7 @@ C标识符 = （字母符号 | '\_\_’）{ 字母数字符号 | '\__'}
 
 在DBC文件中用于识别对象类型的关键字如下表所示
 
-![image-20201104145911332](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20201104145911332.png)
+![image-20201104145911332](./images\image-20201104145911332.png)
 
 ##### 语法描述了目前使用的拓展的BNF符号（(Backus-Naur-Format）
 
