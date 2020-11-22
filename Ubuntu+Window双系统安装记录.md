@@ -68,3 +68,4 @@ Ubuntu 下使用Linux命令简单总结：https://blog.csdn.net/xrinosvip/articl
 
 [解决Windows10与Ubuntu16.04双系统时间不一样问题！（亲测，真正的正确方案）](https://blog.csdn.net/zyqblog/article/details/79318955)
 
+安装完后的琐事：https://www.jb51.net/article/100611.htm
